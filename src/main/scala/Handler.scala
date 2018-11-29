@@ -48,7 +48,7 @@ object Handler extends App {
     val cfn = CompiledSteps.toCFN(interpretedViaJson, handlerFunctionName, ENV_VAR)
     println(s"CFN: $cfn")
     val cfnRaw = Json.prettyPrint(Json.toJson(cfn))
-    Files.write(Paths.get("step/target/generated.cfn.json"), cfnRaw.getBytes(StandardCharsets.UTF_8))
+    Files.write(Paths.get("target/generated.cfn.json"), cfnRaw.getBytes(StandardCharsets.UTF_8))
   }
 
   lazy val ENV_VAR: String = "LAMBDA_ID"
