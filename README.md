@@ -22,6 +22,10 @@ is effective writing normal cloudformation.
 * can't split things into separate jars at present
 * modularity/versioning
 
+Ideas
+* pass through variables
+* returning Try or some way to signal failure
+
 Other useful resources
 * can validate with https://github.com/awslabs/statelint
 * this might be useful for the CFN itself
